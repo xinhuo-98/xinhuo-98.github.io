@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>XINHUO个人主页</title>
+    <script src="../js/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/xinhuo.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="quan">
+        <!-- 顶部 -->
+        <div class="top">
+            <div class="top_zi">XINHUO博客</div>
+        </div>
+
+        <!-- 中部 -->
+        <div class="zhong">
+            <!-- 中——左 -->
+            <div zhong_zuo></div>
+            <!-- 中——中 -->
+            <div zhong_zhong></div>
+            <!-- 中——右 -->
+            <div zhong_you></div>
+        </div>
+
+        <!-- 低部 -->
+        <div class="di">
+            <div class="my_xinhuo">XINHUO的博客</div>
+        </div>
+    </div>
+    <div class="fixed">
+        <div class="btn_audio">
+            <div class="mp3_btn">
+                <audio ref="audio">
+                    <source src="../music/竹影聆风 - 穿越时空的思念 (笛子版).mp3" type="audio/mpeg">
+                </audio></div>
+            <div class="audio_lift" @click="go_play()"><img v-bind:class="{'img_play1':ispause,'img_play2':isplay}">
+            </div>
+
+        </div>
+        <div class="btn_progress">
+            <div class="progress_bottom">
+                <div class="progress_top"></div>
+            </div>
+        </div>
+        <div class="lyric">
+            <div class="lyric_left">犬夜叉主题曲：</div>
+            <div class="lyric_right">穿越时空的思念 (笛子版)</div>
+        </div>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '.fixed',
+            data: {
+                audio: '',
+                isplay: false,
+                ispause: true,
+
+            },
+            mounted() {
+                this.init();
+            },
+            methods: {
+                init() {
+                    this.audio = this.$refs.audio;
+                    this.audio.load();
+                    this.audio.pause();
+                    this.updateProgress();
+                },
+                go_play() {
+                    if (this.audio.paused) {
+                        alert(this.audio)
+                        this.audio.play();
+                        this.ispause = false;
+                        this.isplay = true;
+                    } else {
+                        this.audio.pause();
+                        this.ispause = true;
+                        this.isplay = false;
+                    }
+                },
+                time(value) {
+                   
+
+
+                }
+
+            }
+
+        })
+    </script>
+</body>
+
+</html>

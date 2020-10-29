@@ -1,0 +1,119 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.top_zi{
+    font-size: 40px;
+    text-align: center
+}
+.my_xinhuo{
+    font-size: 20px;
+    text-align: center;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.quan {
+    /* float: left; */
+    height: auto;
+    width: 100%;
+    margin-bottom: 150px;
+    background-color: rgb(255, 164, 214);
+}
+
+.top {
+    height: 100px;
+    width: 100%;
+}
+
+.zhong {
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(226, 177, 43);
+}
+
+.di {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(92, 43, 226, 0.726);
+}
+
+.fixed {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 164, 214);
+    z-index: 9999;
+  
+}
+.btn_audio{
+    float: left;
+    width: 250px;
+    height: 50px;
+    background-color: bisque;
+}
+.mp3_btn{
+    float: left;
+}
+.audio_lift{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.img_play1{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-size:100% 100%;
+    background-image: url(../images/001.png);
+}
+.img_play2{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-size:100% 100%;
+    background-image: url(../images/002.png);
+}
+.btn_progress{
+    float: left;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(158, 19, 100);
+}
+/* 进度条边框样式 */
+.progress_bottom{
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 200px;
+    height: 3px;
+    border:solid 1px green;
+}
+/* 进度条样式 */
+.progress_top{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color:  rgb(7, 6, 6);
+}
+.lyric{
+    float: left;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(19, 158, 26);
+}
+.lyric_left{
+    height: 23px;
+    width: 100%;
+    border:solid 1px rgb(128, 26, 0);
+    text-align: left;
+}
+.lyric_right{
+    height: 23px;
+    width: 100%;
+    border:solid 1px rgb(128, 26, 0);
+    text-align: right;
+}
